@@ -66,7 +66,7 @@
       <h3 class="section-title">Elevator AI</h3>
       <div class="card elevator-card">
         <p class="elevator-name">Elevator</p>
-        <p class="elevator-sub">Our AI model, built in-house.</p>
+        <p class="elevator-sub">Our AI model, built in-house. Chat with it right from this page.</p>
         <ul class="elevator-features">
           <li>Unlimited</li>
           <li>Fully free</li>
@@ -81,6 +81,35 @@
     <p>Roblox Tableboard Studios · Project 2026 · <span id="year"></span></p>
   </footer>
 
+  <!-- Elevator chatbot -->
+  <div class="chatbot" id="chatbot">
+    <div class="chat-panel" id="chat-panel" hidden>
+      <div class="chat-head">
+        <div>
+          <p class="chat-title">Elevator</p>
+          <p class="chat-sub">Keyless · unlimited · always free</p>
+        </div>
+        <button class="chat-close" id="chat-close" aria-label="Close chat">×</button>
+      </div>
+      <div class="chat-messages" id="chat-messages" aria-live="polite"></div>
+      <div class="chat-suggestions" id="chat-suggestions">
+        <button data-q="Is Project 2026 testing internally?">Testing internally?</button>
+        <button data-q="Is testing being finalized?">Finalizing?</button>
+        <button data-q="When is the release?">Release date?</button>
+        <button data-q="Tell me about Elevator">About Elevator</button>
+      </div>
+      <form class="chat-form" id="chat-form">
+        <input type="text" id="chat-input" placeholder="Ask about Project 2026…" autocomplete="off" aria-label="Message Elevator">
+        <button type="submit" aria-label="Send">Send</button>
+      </form>
+    </div>
+    <button class="chat-fab" id="chat-fab" aria-label="Open the Elevator chat">
+      <span class="fab-icon">💬</span>
+      <span class="fab-label">Elevator</span>
+    </button>
+  </div>
+
   <script src="script.js"></script>
+  <script src="chatbot.js"></script>
 </body>
 </html>
