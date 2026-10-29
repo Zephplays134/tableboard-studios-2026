@@ -2,6 +2,12 @@
 
 Official yes-or-no status page for **Roblox Tableboard Studios**, developers of the cruise ship simulator **Project 2026**.
 
+![Spirit-class cruise ship render](assets/spirit-class-render.png)
+
+## Spirit class
+
+Tableboard Studios is building the **Spirit class** for the cruise ship simulator Project 2026. The render above shows the Spirit-class ship. Source image: [`assets/spirit-class-render.png`](assets/spirit-class-render.png).
+
 ## Status
 
 - Currently testing internally: **YES**
@@ -22,6 +28,7 @@ A built-in chat widget (`chatbot.js`) lets visitors ask about Project 2026, the 
 - `styles.css` — styling
 - `script.js` — status values (edit `STATUS` to flip YES/NO)
 - `chatbot.js` — the Elevator chatbot (edit `KNOWLEDGE` to change answers)
+- `assets/spirit-class-render.png` — the Spirit-class ship render
 - `AGENTS.md` — guidance for AI agents
 
 ## Run locally
