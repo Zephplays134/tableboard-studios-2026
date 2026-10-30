@@ -43,7 +43,15 @@ nav a:hover { color: #ffffff; }
 
 main { max-width: 900px; margin: 0 auto; padding: 24px 20px 60px; }
 
-.hero { text-align: center; padding: 48px 0 28px; }
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  padding: 48px 0 28px;
+}
+
+.hero-copy { flex: 1 1 auto; }
 
 .hero h2 {
   margin: 0;
@@ -55,6 +63,70 @@ main { max-width: 900px; margin: 0 auto; padding: 24px 20px 60px; }
 .accent { color: #40c4ff; }
 
 .hero-sub { color: #9fc4dc; font-size: 17px; margin-top: 10px; }
+
+/* Countdown addon */
+
+.countdown-addon {
+  flex: 0 1 330px;
+  background: rgba(10, 42, 66, 0.65);
+  border: 1px solid rgba(64, 196, 255, 0.2);
+  border-radius: 14px;
+  padding: 18px 20px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.countdown-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #bfe3ff;
+  margin: 0 0 12px;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.count-unit {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 52px;
+  background: rgba(4, 18, 31, 0.55);
+  border: 1px solid rgba(64, 196, 255, 0.25);
+  border-radius: 10px;
+  padding: 10px 6px;
+}
+
+.count-unit span {
+  font-size: 24px;
+  font-weight: 800;
+  color: #40c4ff;
+  font-variant-numeric: tabular-nums;
+}
+
+.count-unit em {
+  font-style: normal;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #9fc4dc;
+}
+
+.countdown-note { color: #7fa8c0; font-size: 12px; margin: 12px 0 0; }
+
+@media (max-width: 640px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 36px;
+  }
+
+  .countdown-addon { flex-basis: auto; width: 100%; }
+}
 
 .status-grid {
   display: grid;
